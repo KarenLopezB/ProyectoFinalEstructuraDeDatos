@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ProyectoFinalEstructuraDeDatos
 {
     /// <summary>
-    /// Lógica de interacción para Serie.xaml
+    /// Lógica de interacción para VisualizarPelícula.xaml
     /// </summary>
-    public partial class Series : UserControl
+    public partial class VisualizarPelícula : UserControl
     {
-        public Series()
+        public VisualizarPelícula()
         {
             InitializeComponent();
         }

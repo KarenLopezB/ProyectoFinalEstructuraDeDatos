@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="ProyectoFinalEstructuraDeDatos.Película"
+﻿<UserControl x:Class="ProyectoFinalEstructuraDeDatos.Editar"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -17,10 +17,13 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="189"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="118" Margin="104,225,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
-        <GridSplitter HorizontalAlignment="Left" Height="100" Margin="436,439,0,-89" VerticalAlignment="Top" Width="5"/>
-        <Button x:Name="btnGuardarPelicula" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="104,401,0,0" VerticalAlignment="Top" Width="158" Height="29"/>
-        <Button x:Name="btnCancelarPelicula" Content="Cancelar" HorizontalAlignment="Left" Margin="300,401,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
+        <Button x:Name="btnActualizarPelicula" Content="Actualizar elemento" HorizontalAlignment="Left" Margin="104,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
+        <Button x:Name="btnCancelarPE" Content="Cancelar" HorizontalAlignment="Left" Margin="460,401,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
         <ComboBox HorizontalAlignment="Left" Margin="379,151,0,0" VerticalAlignment="Top" Width="251" Height="26"/>
+        <Label Content="Editar elemento" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Height="39" Width="239" FontSize="20"/>
+        <Label Content="Tipo:" HorizontalAlignment="Left" Margin="35,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="Película" HorizontalAlignment="Left" Margin="104,54,0,0" VerticalAlignment="Top" Height="39" Width="239" FontSize="16"/>
+        <Button x:Name="btnEliminarPE" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="280,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
 
     </Grid>
 </UserControl>

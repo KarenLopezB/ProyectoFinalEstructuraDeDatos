@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListView HorizontalAlignment="Left" Height="253" Margin="10,48,0,0" VerticalAlignment="Top" Width="243">
+        <ListView x:Name="listProgram" HorizontalAlignment="Left" Height="253" Margin="10,48,0,0" VerticalAlignment="Top" Width="243">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Título}" Header="Título" Width="120"></GridViewColumn>
@@ -16,12 +16,14 @@
             </ListView.View>
         </ListView>
         <Label Content="Películas y Series" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="129"/>
-        <Button Content="Ordenar A - Z" HorizontalAlignment="Left" Margin="10,317,0,0" VerticalAlignment="Top" Width="108" Height="27"/>
-        <Button Content="∧ Año" HorizontalAlignment="Left" Margin="163,317,0,0" VerticalAlignment="Top" Width="90" Height="27"/>
-        <Button Content="∨ Año" HorizontalAlignment="Left" Margin="163,365,0,0" VerticalAlignment="Top" Width="90" Height="27"/>
-        <Button Content="Ordenar Z - A" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Width="108" Height="27"/>
-        <Button Content="Nuevo elemento" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="113" Height="26"/>
-        <Grid HorizontalAlignment="Left" Height="253" Margin="281,48,0,0" VerticalAlignment="Top" Width="467"/>
+        <Button x:Name="btnOrdenarAZ" Content="Ordenar A - Z" HorizontalAlignment="Left" Margin="10,317,0,0" VerticalAlignment="Top" Width="108" Height="27"/>
+        <Button x:Name="btnAñoAscendente" Content="∧ Año" HorizontalAlignment="Left" Margin="163,317,0,0" VerticalAlignment="Top" Width="90" Height="27"/>
+        <Button x:Name="btnAñoDescendente" Content="∨ Año" HorizontalAlignment="Left" Margin="163,365,0,0" VerticalAlignment="Top" Width="90" Height="27"/>
+        <Button x:Name="btnOrdenarZA" Content="Ordenar Z - A" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Width="108" Height="27"/>
+        <Button x:Name="btnNuevoElemento" Content="Nuevo elemento" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="113" Height="26"/>
+        <Grid x:Name="grdPrincipal" HorizontalAlignment="Left" Height="253" Margin="281,48,0,0" VerticalAlignment="Top" Width="467">
+            <Grid x:Name="grdSecundario" HorizontalAlignment="Left" Height="189" Margin="10,54,0,0" VerticalAlignment="Top" Width="447"/>
+        </Grid>
 
     </Grid>
 </Window>

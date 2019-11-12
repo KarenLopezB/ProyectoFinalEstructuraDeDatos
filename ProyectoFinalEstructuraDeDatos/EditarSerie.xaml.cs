@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ProyectoFinalEstructuraDeDatos
 {
     /// <summary>
-    /// Lógica de interacción para Serie.xaml
+    /// Lógica de interacción para EditarSerie.xaml
     /// </summary>
-    public partial class Series : UserControl
+    public partial class EditarSerie : UserControl
     {
-        public Series()
+        public EditarSerie()
         {
             InitializeComponent();
         }
