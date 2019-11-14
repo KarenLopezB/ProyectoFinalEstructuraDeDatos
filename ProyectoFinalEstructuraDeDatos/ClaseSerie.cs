@@ -6,22 +6,19 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinalEstructuraDeDatos
 {
-    class ClaseSerie
+    class ClaseSerie : Program
     {
-        public string Titulos { get; set; }
-        public int Años { get; set; }
-
-        public ClaseSerie(string titulos, int años)
+        public ClaseSerie(string titulo, int año)
         {
-            this.Titulos = titulos;
-            this.Años = años;
+            this.Titulo = titulo;
+            this.Año = año;
         }
 
-        public override string ToString()
+        /* public override string ToString()
         {
-            return this.Titulos +
-                "(" + this.Años.ToString() +
+            return this.Titulo +
+                "(" + this.Año.ToString() +
                 ")";
-        }
+        } */
     }
 }

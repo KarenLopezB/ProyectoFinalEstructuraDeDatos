@@ -21,25 +21,31 @@ namespace ProyectoFinalEstructuraDeDatos
     /// </summary>
     public partial class MainWindow : Window
     {
-        ObservableCollection<ClasePelicula> peliculas =
-            new ObservableCollection<ClasePelicula>();
-        ObservableCollection<ClaseSerie> series =
-            new ObservableCollection<ClaseSerie>();
+        Program program = new Program();
+
+        ObservableCollection<Program> programas =
+            new ObservableCollection<Program>();
         public MainWindow()
         {
             InitializeComponent();
 
-            peliculas.Add(new ClasePelicula("En busca de la felicidad", 2006));
-            peliculas.Add(new ClasePelicula("Cenicienta", 1950));
-            peliculas.Add(new ClasePelicula("Shrek", 2001));
+            ClasePelicula peli1 = (new ClasePelicula("En busca de la felicidad", 2006));
+            ClasePelicula peli2 = (new ClasePelicula("Cenicienta", 1950));
+            ClasePelicula peli3 = (new ClasePelicula("Shrek", 2001));
 
-            listProgram.ItemsSource = peliculas;
+            ClaseSerie serie1 = (new ClaseSerie("3%", 2016));
+            ClaseSerie serie2 = (new ClaseSerie("Stranger Things", 2016));
+            ClaseSerie serie3 = (new ClaseSerie("13 Reasons Why", 2015));
 
-            series.Add(new ClaseSerie("3%", 2016));
-            series.Add(new ClaseSerie("Stranger Things", 2016));
-            series.Add(new ClaseSerie("13 Reasons Why", 2015));
+            programas.Add(peli1);
+            programas.Add(peli2);
+            programas.Add(peli3);
+            programas.Add(serie1);
+            programas.Add(serie2);
+            programas.Add(serie3);
 
-            listProgram.ItemsSource = series;
+            listProgram.ItemsSource = programas;
+
         }
 
         private void BtnNuevoElemento_Click(object sender, RoutedEventArgs e)
