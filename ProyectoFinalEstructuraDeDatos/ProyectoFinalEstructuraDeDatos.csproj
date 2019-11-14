@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClaseSerie.cs" />
     <Compile Include="EditarPelícula.xaml.cs">
       <DependentUpon>EditarPelícula.xaml</DependentUpon>
     </Compile>
@@ -63,7 +64,6 @@
     </Compile>
     <Compile Include="Peliculas.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Series.cs" />
     <Compile Include="Serie.xaml.cs">
       <DependentUpon>Serie.xaml</DependentUpon>
     </Compile>

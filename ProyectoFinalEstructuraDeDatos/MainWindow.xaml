@@ -20,7 +20,7 @@
         <Button x:Name="btnAñoAscendente" Content="∧ Año" HorizontalAlignment="Left" Margin="163,317,0,0" VerticalAlignment="Top" Width="90" Height="27"/>
         <Button x:Name="btnAñoDescendente" Content="∨ Año" HorizontalAlignment="Left" Margin="163,365,0,0" VerticalAlignment="Top" Width="90" Height="27"/>
         <Button x:Name="btnOrdenarZA" Content="Ordenar Z - A" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Width="108" Height="27"/>
-        <Button x:Name="btnNuevoElemento" Content="Nuevo elemento" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="113" Height="26"/>
+        <Button x:Name="btnNuevoElemento" Content="Nuevo elemento" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="113" Height="26" Click="BtnNuevoElemento_Click"/>
         <Grid x:Name="grdPrincipal" HorizontalAlignment="Left" Height="253" Margin="281,48,0,0" VerticalAlignment="Top" Width="467"/>
 
     </Grid>

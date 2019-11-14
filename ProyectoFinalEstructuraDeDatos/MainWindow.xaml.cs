@@ -24,5 +24,11 @@ namespace ProyectoFinalEstructuraDeDatos
         {
             InitializeComponent();
         }
+
+        private void BtnNuevoElemento_Click(object sender, RoutedEventArgs e)
+        {
+            grdPrincipal.Children.Clear();
+            grdPrincipal.Children.Add(new Nuevo());
+        }
     }
 }

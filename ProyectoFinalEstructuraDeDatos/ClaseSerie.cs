@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinalEstructuraDeDatos
 {
-    class Series
+    class ClaseSerie
     {
     }
 }
