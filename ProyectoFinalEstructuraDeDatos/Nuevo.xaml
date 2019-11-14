@@ -5,13 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProyectoFinalEstructuraDeDatos"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="253" d:DesignWidth="467">
     <Grid>
-        <Label Content="Agregar nuevo elemento" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Height="39" Width="239" FontSize="20"/>
-        <Label Content="Tipo:" HorizontalAlignment="Left" Margin="35,54,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Película" HorizontalAlignment="Left" Margin="92,85,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Serie" HorizontalAlignment="Left" Margin="235,85,0,0" VerticalAlignment="Top"/>
-        <Grid x:Name="grdSerieyPelicula" HorizontalAlignment="Left" Height="296" Margin="35,126,0,0" VerticalAlignment="Top" Width="731"/>
+        <Label Content="Agregar nuevo elemento" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Height="34" Width="213" FontSize="16"/>
+        <Label Content="Tipo:" HorizontalAlignment="Left" Margin="35,44,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbtnPelicula" Content="Película" HorizontalAlignment="Left" Margin="91,73,0,0" VerticalAlignment="Top" Checked="RdbtnPelicula_Checked"/>
+        <RadioButton x:Name="rdbtnSerie" Content="Serie" HorizontalAlignment="Left" Margin="224,73,0,0" VerticalAlignment="Top" Checked="RdbtnSerie_Checked"/>
+        <Grid x:Name="grdSerieyPelicula" HorizontalAlignment="Left" Height="150" Margin="10,93,0,0" VerticalAlignment="Top" Width="447"/>
 
     </Grid>
 </UserControl>

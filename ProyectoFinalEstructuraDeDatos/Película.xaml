@@ -5,22 +5,22 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProyectoFinalEstructuraDeDatos"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Label Content="Título:" HorizontalAlignment="Left" Margin="35,113,0,0" VerticalAlignment="Top"/>
-        <Label Content="Año:" HorizontalAlignment="Left" Margin="35,151,0,0" VerticalAlignment="Top"/>
-        <Label Content="Director:" HorizontalAlignment="Left" Margin="35,188,0,0" VerticalAlignment="Top"/>
-        <Label Content="Sinopsis:" HorizontalAlignment="Left" Margin="35,225,0,0" VerticalAlignment="Top"/>
-        <Label Content="Género:" HorizontalAlignment="Left" Margin="323,151,0,0" VerticalAlignment="Top"/>
-        <Label Content="Rating:" HorizontalAlignment="Left" Margin="35,357,0,0" VerticalAlignment="Top"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,113,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="189"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="118" Margin="104,225,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
-        <GridSplitter HorizontalAlignment="Left" Height="100" Margin="436,439,0,-89" VerticalAlignment="Top" Width="5"/>
-        <Button x:Name="btnGuardarPelicula" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="104,401,0,0" VerticalAlignment="Top" Width="158" Height="29"/>
-        <Button x:Name="btnCancelarPelicula" Content="Cancelar" HorizontalAlignment="Left" Margin="300,401,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
-        <ComboBox HorizontalAlignment="Left" Margin="379,151,0,0" VerticalAlignment="Top" Width="251" Height="26"/>
+             d:DesignHeight="477" d:DesignWidth="879">
+    <Grid Margin="10,27,167,93">
+        <Label Content="Título:" HorizontalAlignment="Left" Margin="12,9,0,0" VerticalAlignment="Top"/>
+        <Label Content="Año:" HorizontalAlignment="Left" Margin="12,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Director:" HorizontalAlignment="Left" Margin="12,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sinopsis:" HorizontalAlignment="Left" Margin="12,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Género:" HorizontalAlignment="Left" Margin="300,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rating:" HorizontalAlignment="Left" Margin="12,253,0,0" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="81,9,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="81,47,0,0" Stroke="Black" VerticalAlignment="Top" Width="189"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="81,84,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="118" Margin="81,121,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
+        <GridSplitter HorizontalAlignment="Left" Height="100" Margin="413,335,0,0" VerticalAlignment="Top" Width="5"/>
+        <Button x:Name="btnGuardarPelicula" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="81,297,0,0" VerticalAlignment="Top" Width="158" Height="29"/>
+        <Button x:Name="btnCancelarPelicula" Content="Cancelar" HorizontalAlignment="Left" Margin="277,297,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
+        <ComboBox HorizontalAlignment="Left" Margin="356,47,0,0" VerticalAlignment="Top" Width="251" Height="26"/>
 
     </Grid>
 </UserControl>

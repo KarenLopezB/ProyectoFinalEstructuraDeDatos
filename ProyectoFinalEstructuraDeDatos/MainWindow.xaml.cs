@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
 
 namespace ProyectoFinalEstructuraDeDatos
 {
@@ -20,9 +21,20 @@ namespace ProyectoFinalEstructuraDeDatos
     /// </summary>
     public partial class MainWindow : Window
     {
+        ObservableCollection<ClasePelicula> peliculas=
+            new ObservableCollection<ClasePelicula>();
+        ObservableCollection<ClaseSerie> series=
+            new ObservableCollection<ClaseSerie>();
         public MainWindow()
         {
             InitializeComponent();
+
+          //alumnos.Add(
+           //   new Alumno("José", 9.1f, 2));
+
+
+
+            listProgram.ItemsSource = peliculas;
         }
 
         private void BtnNuevoElemento_Click(object sender, RoutedEventArgs e)

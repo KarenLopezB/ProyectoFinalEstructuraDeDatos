@@ -8,5 +8,20 @@ namespace ProyectoFinalEstructuraDeDatos
 {
     class ClaseSerie
     {
+        public string Titulos { get; set; }
+        public int Años { get; set; }
+
+        public ClaseSerie(string titulos, int años)
+        {
+            this.Titulos = titulos;
+            this.Años = años;
+        }
+
+        public override string ToString()
+        {
+            return this.Titulos +
+                "(" + this.Años.ToString() +
+                ")";
+        }
     }
 }
