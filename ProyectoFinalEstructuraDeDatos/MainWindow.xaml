@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListView x:Name="listProgram" HorizontalAlignment="Left" Height="253" Margin="10,48,0,0" VerticalAlignment="Top" Width="243">
+        <ListView x:Name="listProgram" HorizontalAlignment="Left" Height="253" Margin="10,48,0,0" VerticalAlignment="Top" Width="243" SelectionChanged="listProgram_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Título}" Header="Título" Width="120"></GridViewColumn>
