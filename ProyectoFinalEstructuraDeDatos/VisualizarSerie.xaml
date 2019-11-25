@@ -7,12 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Button x:Name="btnHabilitarSerie" Content="Habilitar edición" HorizontalAlignment="Left" Margin="104,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
-        <Button x:Name="btnCancelarSV" Content="Cancelar" HorizontalAlignment="Left" Margin="460,401,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
         <Label Content="Visualizar elemento" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Height="39" Width="239" FontSize="20"/>
         <Label Content="Tipo:" HorizontalAlignment="Left" Margin="35,54,0,0" VerticalAlignment="Top"/>
         <Label Content="Serie" HorizontalAlignment="Left" Margin="104,54,0,0" VerticalAlignment="Top" Height="39" Width="239" FontSize="16"/>
-        <Button x:Name="btnEliminarSV" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="280,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
         <Label Content="Título:" HorizontalAlignment="Left" Margin="30,113,0,0" VerticalAlignment="Top"/>
         <Label Content="Año:" HorizontalAlignment="Left" Margin="35,151,0,0" VerticalAlignment="Top"/>
         <Label Content="Productor:" HorizontalAlignment="Left" Margin="309,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
@@ -25,6 +22,10 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="118" Margin="104,225,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
         <ComboBox HorizontalAlignment="Left" Margin="379,151,0,0" VerticalAlignment="Top" Width="251" Height="26"/>
         <Label Content="Temporadas:" HorizontalAlignment="Left" Margin="30,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
+        <Button x:Name="btnHabilitarPelicula" Content="Habilitar edición" HorizontalAlignment="Left" Margin="104,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
+        <Button x:Name="btnCancelarPV" Content="Cancelar" HorizontalAlignment="Left" Margin="630,401,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
+        <Button x:Name="btnEliminarPV" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="450,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
+        <Button x:Name="btnGuardarPV_Copy" Content="Guardar elemento" HorizontalAlignment="Left" Margin="278,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
 
     </Grid>
 </UserControl>
