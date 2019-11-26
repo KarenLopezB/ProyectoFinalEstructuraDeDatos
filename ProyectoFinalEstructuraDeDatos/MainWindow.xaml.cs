@@ -97,8 +97,13 @@ namespace ProyectoFinalEstructuraDeDatos
                 btnOrdenarZA.Visibility = Visibility.Hidden;
                 btnAñoAscendente.Visibility = Visibility.Hidden;
                 btnAñoDescendente.Visibility = Visibility.Hidden;
+                btnActualizarE.Visibility = Visibility.Hidden;
+                btnEliminarE.Visibility = Visibility.Hidden;
+                btnCancelarE.Visibility = Visibility.Hidden;
 
                 btnHabilitarEdicion.Visibility = Visibility.Visible;
+                btnEliminarPV.Visibility = Visibility.Visible;
+                btnCancelarPV.Visibility = Visibility.Visible;
 
                 if (Programas[listProgram.SelectedIndex].Clase == "Pelicula")
                 {
@@ -213,6 +218,91 @@ namespace ProyectoFinalEstructuraDeDatos
         }
 
         private void BtnHabilitarEdicion_Click(object sender, RoutedEventArgs e)
+        {
+            if(Programas[listProgram.SelectedIndex].Clase == "Pelicula")
+            {
+                grdPrincipal.Children.Clear();
+                grdPrincipal.Children.Add(new Editar());
+
+                btnHabilitarEdicion.Visibility = Visibility.Hidden;
+                btnEliminarPV.Visibility = Visibility.Hidden;
+                btnCancelarPV.Visibility = Visibility.Hidden;
+                btnActualizarE.Visibility = Visibility.Visible;
+                btnEliminarE.Visibility = Visibility.Visible;
+                btnCancelarE.Visibility = Visibility.Visible;
+
+                Img5estrellas.Visibility = Visibility.Hidden;
+                Img4estrellas.Visibility = Visibility.Hidden;
+                Img3estrellas.Visibility = Visibility.Hidden;
+                Img2estrellas.Visibility = Visibility.Hidden;
+                Img1estrella.Visibility = Visibility.Hidden;
+
+                ((Editar)(grdPrincipal.Children[0])).txtTituloEP.Text = Programas[listProgram.SelectedIndex].Titulo;
+                ((Editar)(grdPrincipal.Children[0])).txtAñoEP.Text = Programas[listProgram.SelectedIndex].Año.ToString();
+                ((Editar)(grdPrincipal.Children[0])).cbGeneroEP.Text = Programas[listProgram.SelectedIndex].Genero;
+                ((Editar)(grdPrincipal.Children[0])).txtDirectorEP.Text = Programas[listProgram.SelectedIndex].Director;
+                ((Editar)(grdPrincipal.Children[0])).txtSinopsisEP.Text = Programas[listProgram.SelectedIndex].Sinopsis;
+                ((Editar)(grdPrincipal.Children[0])).txtRatingEP.Text = Programas[listProgram.SelectedIndex].Rating.ToString();
+
+            }
+
+            if (Programas[listProgram.SelectedIndex].Clase == "Serie")
+            {
+                grdPrincipal.Children.Clear();
+                grdPrincipal.Children.Add(new EditarSerie());
+
+                btnHabilitarEdicion.Visibility = Visibility.Hidden;
+                btnEliminarPV.Visibility = Visibility.Hidden;
+                btnCancelarPV.Visibility = Visibility.Hidden;
+                btnActualizarE.Visibility = Visibility.Visible;
+                btnEliminarE.Visibility = Visibility.Visible;
+                btnCancelarE.Visibility = Visibility.Visible;
+
+                Img5estrellas.Visibility = Visibility.Hidden;
+                Img4estrellas.Visibility = Visibility.Hidden;
+                Img3estrellas.Visibility = Visibility.Hidden;
+                Img2estrellas.Visibility = Visibility.Hidden;
+                Img1estrella.Visibility = Visibility.Hidden;
+
+                ((EditarSerie)(grdPrincipal.Children[0])).txtTituloES.Text = Programas[listProgram.SelectedIndex].Titulo;
+                ((EditarSerie)(grdPrincipal.Children[0])).txtAñoES.Text = Programas[listProgram.SelectedIndex].Año.ToString();
+                ((EditarSerie)(grdPrincipal.Children[0])).cbGeneroES.Text = Programas[listProgram.SelectedIndex].Genero;
+                ((EditarSerie)(grdPrincipal.Children[0])).txtTemporadasES.Text = Programas[listProgram.SelectedIndex].Temporadas.ToString();
+                ((EditarSerie)(grdPrincipal.Children[0])).txtProductorES.Text = Programas[listProgram.SelectedIndex].Productor;
+                ((EditarSerie)(grdPrincipal.Children[0])).txtDescripcionES.Text = Programas[listProgram.SelectedIndex].Descripcion;
+                ((EditarSerie)(grdPrincipal.Children[0])).txtRatingES.Text = Programas[listProgram.SelectedIndex].Rating.ToString();
+            }
+        }
+
+        private void BtnEliminarPV_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnCancelarPV_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnActualizarE_Click(object sender, RoutedEventArgs e)
+        {
+            if(Programas[listProgram.SelectedIndex].Clase == "Pelicula")
+            {
+
+                grdPrincipal.Children.Add(new Editar());
+
+                //Para minimizar toda la informción, hacemos lo siguiente
+                var variable1 = ((Editar)(grdPrincipal.Children[0]));
+                var variable2 = Programas
+            }
+        }
+
+        private void BtnEliminarE_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnCancelarE_Click(object sender, RoutedEventArgs e)
         {
 
         }

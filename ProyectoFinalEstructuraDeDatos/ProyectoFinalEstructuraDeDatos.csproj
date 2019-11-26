@@ -57,8 +57,8 @@
     </ApplicationDefinition>
     <Compile Include="ClasePelicula.cs" />
     <Compile Include="ClaseSerie.cs" />
-    <Compile Include="EditarPelícula.xaml.cs">
-      <DependentUpon>EditarPelícula.xaml</DependentUpon>
+    <Compile Include="Editar.xaml.cs">
+      <DependentUpon>Editar.xaml</DependentUpon>
     </Compile>
     <Compile Include="EditarSerie.xaml.cs">
       <DependentUpon>EditarSerie.xaml</DependentUpon>
@@ -73,7 +73,7 @@
     <Compile Include="VisualizarSerie.xaml.cs">
       <DependentUpon>VisualizarSerie.xaml</DependentUpon>
     </Compile>
-    <Page Include="EditarPelícula.xaml">
+    <Page Include="Editar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

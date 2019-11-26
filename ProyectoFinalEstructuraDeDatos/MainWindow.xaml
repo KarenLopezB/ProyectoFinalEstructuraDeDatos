@@ -30,9 +30,11 @@
         <Image x:Name="Img2estrellas" Visibility="Hidden" HorizontalAlignment="Left" Height="40" Margin="349,334,0,0" VerticalAlignment="Top" Width="170" Source="2.png"/>
         <Image x:Name="Img1estrella" Visibility="Hidden" HorizontalAlignment="Left" Height="40" Margin="349,334,0,0" VerticalAlignment="Top" Width="170" Source="1.png"/>
         <Button x:Name="btnHabilitarEdicion" Visibility="Hidden" Content="Habilitar edición" HorizontalAlignment="Left" Margin="299,397,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnHabilitarEdicion_Click"/>
-        <Button x:Name="btnCancelarPV" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="760,455,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
-        <Button x:Name="btnEliminarPV" Visibility="Hidden" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="580,455,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
-        <Button x:Name="btnGuardarPV" Visibility="Hidden" Content="Guardar elemento" HorizontalAlignment="Left" Margin="408,455,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
+        <Button x:Name="btnCancelarE" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="760,455,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="BtnCancelarE_Click"/>
+        <Button x:Name="btnEliminarE" Visibility="Hidden" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="580,455,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnEliminarE_Click"/>
+        <Button x:Name="btnActualizarE" Visibility="Hidden" Content="Guardar elemento" HorizontalAlignment="Left" Margin="408,455,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnActualizarE_Click"/>
+        <Button x:Name="btnCancelarPV" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="657,397,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="BtnCancelarPV_Click"/>
+        <Button x:Name="btnEliminarPV" Visibility="Hidden" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnEliminarPV_Click"/>
 
     </Grid>
 </Window>
