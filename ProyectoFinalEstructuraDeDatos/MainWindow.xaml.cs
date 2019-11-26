@@ -293,7 +293,7 @@ namespace ProyectoFinalEstructuraDeDatos
 
                 //Para minimizar toda la informción, hacemos lo siguiente
                 var variable1 = ((Editar)(grdPrincipal.Children[0]));
-                var variable2 = Programas
+                var variable2 = Programas;
             };
         }
 
