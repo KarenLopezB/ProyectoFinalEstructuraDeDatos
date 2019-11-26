@@ -13,19 +13,20 @@
         <Label Content="Título:" HorizontalAlignment="Left" Margin="30,113,0,0" VerticalAlignment="Top"/>
         <Label Content="Año:" HorizontalAlignment="Left" Margin="35,151,0,0" VerticalAlignment="Top"/>
         <Label Content="Productor:" HorizontalAlignment="Left" Margin="309,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
-        <Label Content="Descripción:" HorizontalAlignment="Left" Margin="30,225,0,0" VerticalAlignment="Top"/>
+        <Label Content="Descripción:" HorizontalAlignment="Left" Margin="27,225,0,0" VerticalAlignment="Top"/>
         <Label Content="Género:" HorizontalAlignment="Left" Margin="323,151,0,0" VerticalAlignment="Top"/>
         <Label Content="Rating:" HorizontalAlignment="Left" Margin="35,357,0,0" VerticalAlignment="Top"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,113,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,113,0,0" Stroke="Black" VerticalAlignment="Top" Width="600"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="189"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="379,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="326"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="118" Margin="104,225,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
         <ComboBox HorizontalAlignment="Left" Margin="379,151,0,0" VerticalAlignment="Top" Width="251" Height="26"/>
-        <Label Content="Temporadas:" HorizontalAlignment="Left" Margin="30,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
+        <Label Content="Temporadas:" HorizontalAlignment="Left" Margin="27,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
         <Button x:Name="btnHabilitarPelicula" Content="Habilitar edición" HorizontalAlignment="Left" Margin="104,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
         <Button x:Name="btnCancelarPV" Content="Cancelar" HorizontalAlignment="Left" Margin="630,401,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
         <Button x:Name="btnEliminarPV" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="450,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
         <Button x:Name="btnGuardarPV_Copy" Content="Guardar elemento" HorizontalAlignment="Left" Margin="278,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
+        <TextBlock x:Name="txtbDescripcion" HorizontalAlignment="Left" Margin="104,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="118" Width="600"/>
+        <TextBlock x:Name="txtbTemporadas" HorizontalAlignment="Left" Margin="104,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="189"/>
+        <TextBlock x:Name="txtbProductor" HorizontalAlignment="Left" Margin="379,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="325"/>
 
     </Grid>
 </UserControl>

@@ -21,10 +21,10 @@
         <Button x:Name="btnEliminarPV" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="450,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
         <Button x:Name="btnGuardarPV_Copy" Content="Guardar elemento" HorizontalAlignment="Left" Margin="278,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
         <TextBlock x:Name="txtbTitulo" HorizontalAlignment="Left" Margin="104,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="600"/>
-        <TextBlock HorizontalAlignment="Left" Margin="104,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="214"/>
-        <TextBlock HorizontalAlignment="Left" Margin="424,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="182"/>
-        <TextBlock HorizontalAlignment="Left" Margin="104,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="600"/>
-        <TextBlock HorizontalAlignment="Left" Margin="104,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="118" Width="600"/>
-        <TextBlock HorizontalAlignment="Left" Margin="104,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="214"/>
+        <TextBlock x:Name="txtbAño" HorizontalAlignment="Left" Margin="104,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="214"/>
+        <TextBlock x:Name="txtbGenero" HorizontalAlignment="Left" Margin="424,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="182"/>
+        <TextBlock x:Name="txtbDirector" HorizontalAlignment="Left" Margin="104,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="600"/>
+        <TextBlock x:Name="txtbSinopsis" HorizontalAlignment="Left" Margin="104,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="118" Width="600"/>
+        <TextBlock x:Name="txtbRating" HorizontalAlignment="Left" Margin="104,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="214"/>
     </Grid>
 </UserControl>

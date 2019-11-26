@@ -13,12 +13,16 @@
         <Label Content="Descripción:" HorizontalAlignment="Left" Margin="2,100,0,0" VerticalAlignment="Top"/>
         <Label Content="Género:" HorizontalAlignment="Left" Margin="284,36,0,0" VerticalAlignment="Top"/>
         <Label Content="Rating:" HorizontalAlignment="Left" Margin="5,175,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnGuardarSerie" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="73,227,0,0" VerticalAlignment="Top" Width="158" Height="29"/>
-        <Button x:Name="btnCancelarSerie" Content="Cancelar" HorizontalAlignment="Left" Margin="266,227,0,0" VerticalAlignment="Top" Width="74" Height="28"/>
-        <ComboBox HorizontalAlignment="Left" Margin="349,36,0,0" VerticalAlignment="Top" Width="176" Height="26"/>
+        <ComboBox HorizontalAlignment="Left" Margin="349,36,0,0" VerticalAlignment="Top" Width="176" Height="26">
+            <ComboBoxItem Content="Drama"/>
+            <ComboBoxItem Content="Fantasía"/>
+            <ComboBoxItem Content="Comedia"/>
+            <ComboBoxItem Content="Thriller"/>
+            <ComboBoxItem Content="Ciencia Ficción"/>
+        </ComboBox>
         <Label Content="Temporadas:" HorizontalAlignment="Left" Margin="2,65,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="73,4,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="451"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="73,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196"/>
+        <TextBox x:Name="txtTituloS" HorizontalAlignment="Left" Height="23" Margin="73,4,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="451"/>
+        <TextBox x:Name="txtAñoS" HorizontalAlignment="Left" Height="23" Margin="73,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="82,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="349,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
         <TextBox HorizontalAlignment="Left" Height="68" Margin="82,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="443"/>

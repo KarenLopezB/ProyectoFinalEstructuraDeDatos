@@ -23,6 +23,8 @@ namespace ProyectoFinalEstructuraDeDatos
         public VisualizarPelícula()
         {
             InitializeComponent();
+
+            txtbTitulo.IsEnabled= false;
         }
     }
 }

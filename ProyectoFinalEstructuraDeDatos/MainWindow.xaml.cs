@@ -23,11 +23,13 @@ namespace ProyectoFinalEstructuraDeDatos
     {
         Program program = new Program();
 
-        ObservableCollection<Program> programas =
+        ObservableCollection<Program> Programas =
             new ObservableCollection<Program>();
         public MainWindow()
         {
             InitializeComponent();
+
+            
 
             ClasePelicula peli1 = (new ClasePelicula("En busca de la felicidad", 2006, "Drama", 
                 "Gabriele Muccino", "La vida es una lucha para Chris Gardner. Expulsado de su apartamento, él y su joven " +
@@ -57,14 +59,14 @@ namespace ProyectoFinalEstructuraDeDatos
                 "Después de que una mujer joven se quite la vida, su compañero de clase encuentra una misteriosa " +
                 "caja en su patio.", 5));
 
-            programas.Add(peli1);
-            programas.Add(peli2);
-            programas.Add(peli3);
-            programas.Add(serie1);
-            programas.Add(serie2);
-            programas.Add(serie3);
+            Programas.Add(peli1);
+            Programas.Add(peli2);
+            Programas.Add(peli3);
+            Programas.Add(serie1);
+            Programas.Add(serie2);
+            Programas.Add(serie3);
 
-            listProgram.ItemsSource = programas;
+            listProgram.ItemsSource = Programas;
 
         }
 
@@ -77,6 +79,8 @@ namespace ProyectoFinalEstructuraDeDatos
             btnAñoAscendente.Visibility = Visibility.Hidden;
             btnAñoDescendente.Visibility = Visibility.Hidden;
             btnNuevoElemento.Visibility = Visibility.Hidden;
+            btnGuardarNuevo.Visibility = Visibility.Visible;
+            btnCancelarNuevo.Visibility = Visibility.Visible;
 
         }
 
@@ -95,12 +99,37 @@ namespace ProyectoFinalEstructuraDeDatos
                 btnAñoDescendente.Visibility = Visibility.Hidden;
 
 
-                ((VisualizarPelícula)(listProgram.Children[0])).txtbTitulo.Text = Program[listProgram.SelectedIndex].Titulo;
-                ((VisualizarPelícula)(listProgram.Children[0])).cb_genero.Text = Program[listProgram.SelectedIndex].Genero;
-                ((VisualizarPelícula)(listProgram.Children[0])).cb_sinopsis.Text = Program[listProgram.SelectedIndex].Sinopsis;
-                ((VisualizarSerie)(listProgram.Children[0])).cb_productor.Text = Program[listProgram.SelectedIndex].Productor;
-                ((VisualizarPelícula)(listProgram.Children[0])).cb_director.Text = Program[listProgram.SelectedIndex].Director;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbTitulo.Text = Programas[listProgram.SelectedIndex].Titulo;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbAño.Text = Programas[listProgram.SelectedIndex].Año.ToString();
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbDirector.Text = Programas[listProgram.SelectedIndex].Director;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbSinopsis.Text = Programas[listProgram.SelectedIndex].Sinopsis;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbGenero.Text = Programas[listProgram.SelectedIndex].Genero;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbRating.Text = Programas[listProgram.SelectedIndex].Rating.ToString();
+                //((VisualizarSerie)grdPrincipal.Children[0]).txtbTemporadas.Text = Programas[listProgram.SelectedIndex].Temporadas;
+                //((VisualizarSerie)(grdPrincipal.Children[0])).txtbProductor.Text = Programas[listProgram.SelectedIndex].Productor;
+                //((VisualizarSerie)(grdPrincipal.Children[0])).txtbDescripcion.Text = Programas[listProgram.SelectedIndex].Descripcion;
+
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbTitulo.IsEnabled = true;
             }
+        }
+
+        private void BtnGuardarNuevo_Click(object sender, RoutedEventArgs e)
+        {
+            //Programas.Add(new Program(txtTituloS.text, txtAñoS.text));
+            //txtTituloS.Text = "";
+            //txtbox2.Text = "";
+        }
+
+        private void BtnCancelarNuevo_Click(object sender, RoutedEventArgs e)
+        {
+            grdPrincipal.Children.Clear();
+            btnNuevoElemento.Visibility = Visibility.Visible;
+            btnOrdenarAZ.Visibility = Visibility.Visible;
+            btnOrdenarZA.Visibility = Visibility.Visible;
+            btnAñoAscendente.Visibility = Visibility.Visible;
+            btnAñoDescendente.Visibility = Visibility.Visible;
+            btnGuardarNuevo.Visibility = Visibility.Hidden;
+            btnCancelarNuevo.Visibility = Visibility.Hidden;
         }
     }
 }

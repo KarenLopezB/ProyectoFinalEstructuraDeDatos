@@ -6,18 +6,22 @@
              xmlns:local="clr-namespace:ProyectoFinalEstructuraDeDatos"
              mc:Ignorable="d" Height="287
              " Width="535">
-    <Grid Margin="0,0,0,5">
+    <Grid x:Name="grdPelicula" Margin="0,0,0,5">
         <Label Content="Título:" HorizontalAlignment="Left" Margin="4,1,0,0" VerticalAlignment="Top"/>
         <Label Content="Año:" HorizontalAlignment="Left" Margin="4,36,0,0" VerticalAlignment="Top" Height="23"/>
         <Label Content="Director:" HorizontalAlignment="Left" Margin="4,67,0,0" VerticalAlignment="Top" Height="24"/>
         <Label Content="Sinopsis:" HorizontalAlignment="Left" Margin="4,100,0,0" VerticalAlignment="Top" Height="27"/>
         <Label Content="Género:" HorizontalAlignment="Left" Margin="250,34,0,0" VerticalAlignment="Top" Height="23"/>
         <Label Content="Rating:" HorizontalAlignment="Left" Margin="4,175,0,0" VerticalAlignment="Top" Height="26"/>
-        <Button x:Name="btnGuardarPelicula" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="73,227,0,0" VerticalAlignment="Top" Width="158" Height="29"/>
-        <Button x:Name="btnCancelarPelicula" Content="Cancelar" HorizontalAlignment="Left" Margin="266,227,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
-        <ComboBox HorizontalAlignment="Left" Margin="315,32,0,0" VerticalAlignment="Top" Width="210" Height="23"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="73,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="73,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165"/>
+        <ComboBox HorizontalAlignment="Left" Margin="315,32,0,0" VerticalAlignment="Top" Width="210" Height="23">
+            <ComboBoxItem Content="Drama"/>
+            <ComboBoxItem Content="Fantasía"/>
+            <ComboBoxItem Content="Comedia"/>
+            <ComboBoxItem Content="Thriller"/>
+            <ComboBoxItem Content="Ciencia Ficción"/>
+        </ComboBox>
+        <TextBox x:Name="txtTituloP" HorizontalAlignment="Left" Height="23" Margin="73,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <TextBox x:Name="txtAñoP" HorizontalAlignment="Left" Height="23" Margin="73,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="73,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
         <TextBox HorizontalAlignment="Left" Height="68" Margin="73,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="73,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>

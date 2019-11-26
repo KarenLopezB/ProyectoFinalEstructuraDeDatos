@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ProyectoFinalEstructuraDeDatos"
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="545">
-    <Grid>
+    <Grid x:Name="grdNuevo">
         <Label Content="Agregar nuevo elemento" HorizontalAlignment="Left" Margin="10,-4,0,0" VerticalAlignment="Top" Height="28" Width="166" FontSize="14"/>
         <Label Content="Tipo:" HorizontalAlignment="Left" Margin="35,18,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="rdbtnPelicula" Content="Película" HorizontalAlignment="Left" Margin="90,37,0,0" VerticalAlignment="Top" Checked="RdbtnPelicula_Checked"/>

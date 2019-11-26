@@ -21,7 +21,14 @@
         <Button x:Name="btnAñoDescendente" Content="∨ Año" HorizontalAlignment="Left" Margin="163,447,0,0" VerticalAlignment="Top" Width="90" Height="27"/>
         <Button x:Name="btnOrdenarZA" Content="Ordenar Z - A" HorizontalAlignment="Left" Margin="10,447,0,0" VerticalAlignment="Top" Width="108" Height="27"/>
         <Button x:Name="btnNuevoElemento" Content="Nuevo elemento" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="113" Height="26" Click="BtnNuevoElemento_Click"/>
-        <Grid x:Name="grdPrincipal" HorizontalAlignment="Left" Height="350" Margin="281,48,0,0" VerticalAlignment="Top" Width="545"/>
+        <Grid x:Name="grdPrincipal" HorizontalAlignment="Left" Height="304" Margin="281,48,0,0" VerticalAlignment="Top" Width="545"/>
+        <Button x:Name="btnGuardarNuevo" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevo_Click"/>
+        <Button x:Name="btnCancelarNuevo" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="670,397,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="BtnCancelarNuevo_Click"/>
+        <Image Margin="281,346,389,134" Source="5.png" Stretch="Fill"/>
+        <Image Margin="490,346,181,134" Source="4.png" Stretch="Fill"/>
+        <Image Margin="281,415,389,65" Source="3.png" Stretch="Fill"/>
+        <Image Margin="477,466,192,14" Source="2.png" Stretch="Fill"/>
+        <Image Margin="483,415,187,65" Source="1.png" Stretch="Fill"/>
 
     </Grid>
 </Window>

@@ -24,5 +24,18 @@ namespace ProyectoFinalEstructuraDeDatos
         {
             InitializeComponent();
         }
+
+        private void BtnGuardarPelicula_Click(object sender, RoutedEventArgs e)
+        {
+            //programas.Add(new Color(txtbox1.Text, txtbox2.Text, txtbox3.Text));
+            //txtbox1.Text = "";
+            //txtbox2.Text = "";
+            //txtbox3.Text = "";
+        }
+
+        private void BtnCancelarPelicula_Click(object sender, RoutedEventArgs e)
+        {
+            //grdNuevo.Children.Clear();
+        }
     }
 }
