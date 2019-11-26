@@ -286,15 +286,15 @@ namespace ProyectoFinalEstructuraDeDatos
 
         private void BtnActualizarE_Click(object sender, RoutedEventArgs e)
         {
-            if(Programas[listProgram.SelectedIndex].Clase == "Pelicula")
+           /* if(Programas[listProgram.SelectedIndex].Clase == "Pelicula")
             {
 
                 grdPrincipal.Children.Add(new Editar());
 
                 //Para minimizar toda la informción, hacemos lo siguiente
-                var variable1 = ((Editar)(grdPrincipal.Children[0]));
-                var variable2 = Programas;
-            };
+                //var variable1 = ((Editar)(grdPrincipal.Children[0]));
+               // var variable2 = Programas;
+            };*/
         }
 
         private void BtnEliminarE_Click(object sender, RoutedEventArgs e)
