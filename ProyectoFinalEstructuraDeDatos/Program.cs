@@ -8,6 +8,7 @@ namespace ProyectoFinalEstructuraDeDatos
 {
     class Program
     {
+        public string Clase { get; set; }
         public string Titulo { get; set; }
         public int Año { get; set; }
         public string Director { get; set; }

@@ -8,8 +8,9 @@ namespace ProyectoFinalEstructuraDeDatos
 {
     class ClaseSerie : Program
     {
-        public ClaseSerie(string titulo, int año, string genero, int temporadas, string productor, string descripcion, int rating)
+        public ClaseSerie(string clase, string titulo, int año, string genero, int temporadas, string productor, string descripcion, int rating)
         {
+            this.Clase = clase;
             this.Titulo = titulo;
             this.Año = año;
             this.Genero = genero;

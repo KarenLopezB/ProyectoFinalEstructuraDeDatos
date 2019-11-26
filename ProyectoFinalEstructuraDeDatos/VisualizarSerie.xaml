@@ -5,28 +5,25 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProyectoFinalEstructuraDeDatos"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="326" d:DesignWidth="545">
     <Grid>
-        <Label Content="Visualizar elemento" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Height="39" Width="239" FontSize="20"/>
-        <Label Content="Tipo:" HorizontalAlignment="Left" Margin="35,54,0,0" VerticalAlignment="Top"/>
-        <Label Content="Serie" HorizontalAlignment="Left" Margin="104,54,0,0" VerticalAlignment="Top" Height="39" Width="239" FontSize="16"/>
-        <Label Content="Título:" HorizontalAlignment="Left" Margin="30,113,0,0" VerticalAlignment="Top"/>
-        <Label Content="Año:" HorizontalAlignment="Left" Margin="35,151,0,0" VerticalAlignment="Top"/>
-        <Label Content="Productor:" HorizontalAlignment="Left" Margin="309,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
-        <Label Content="Descripción:" HorizontalAlignment="Left" Margin="27,225,0,0" VerticalAlignment="Top"/>
-        <Label Content="Género:" HorizontalAlignment="Left" Margin="323,151,0,0" VerticalAlignment="Top"/>
-        <Label Content="Rating:" HorizontalAlignment="Left" Margin="35,357,0,0" VerticalAlignment="Top"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,113,0,0" Stroke="Black" VerticalAlignment="Top" Width="600"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="189"/>
-        <ComboBox HorizontalAlignment="Left" Margin="379,151,0,0" VerticalAlignment="Top" Width="251" Height="26"/>
-        <Label Content="Temporadas:" HorizontalAlignment="Left" Margin="27,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
-        <Button x:Name="btnHabilitarPelicula" Content="Habilitar edición" HorizontalAlignment="Left" Margin="104,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
-        <Button x:Name="btnCancelarPV" Content="Cancelar" HorizontalAlignment="Left" Margin="630,401,0,0" VerticalAlignment="Top" Width="74" Height="29"/>
-        <Button x:Name="btnEliminarPV" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="450,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
-        <Button x:Name="btnGuardarPV_Copy" Content="Guardar elemento" HorizontalAlignment="Left" Margin="278,401,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
-        <TextBlock x:Name="txtbDescripcion" HorizontalAlignment="Left" Margin="104,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="118" Width="600"/>
-        <TextBlock x:Name="txtbTemporadas" HorizontalAlignment="Left" Margin="104,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="189"/>
-        <TextBlock x:Name="txtbProductor" HorizontalAlignment="Left" Margin="379,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="325"/>
+        <Label Content="Año:" HorizontalAlignment="Left" Margin="18,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Productor:" HorizontalAlignment="Left" Margin="236,133,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
+        <Label Content="Descripción:" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top"/>
+        <Label Content="Temporadas:" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
+        <TextBlock x:Name="txtbProductorS" HorizontalAlignment="Left" Margin="306,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="172"/>
+        <Label Content="Título:" HorizontalAlignment="Left" Margin="9,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="Género:" HorizontalAlignment="Left" Margin="236,107,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rating:" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
+        <Label Content="Visualizar elemento" HorizontalAlignment="Left" Margin="2,-1,0,0" VerticalAlignment="Top" Height="27" Width="134" FontSize="14"/>
+        <Label Content="Tipo:" HorizontalAlignment="Left" Margin="40,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="Serie" HorizontalAlignment="Left" Margin="85,26,0,0" VerticalAlignment="Top" Height="30" Width="239" FontSize="16"/>
+        <TextBlock x:Name="txtbTituloS" HorizontalAlignment="Left" Margin="61,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="466"/>
+        <TextBlock x:Name="txtbAñoS" HorizontalAlignment="Left" Margin="61,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="107"/>
+        <TextBlock x:Name="txtbTemporadasS" HorizontalAlignment="Left" Margin="94,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="131"/>
+        <TextBlock x:Name="txtbGeneroS" HorizontalAlignment="Left" Margin="306,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="221"/>
+        <TextBlock x:Name="txtbDescripcionS" HorizontalAlignment="Left" Margin="89,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="104" Width="410"/>
+        <TextBlock x:Name="txtbRatingS" Visibility="Hidden" HorizontalAlignment="Left" Margin="68,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="115"/>
 
     </Grid>
 </UserControl>

@@ -9,8 +9,9 @@ namespace ProyectoFinalEstructuraDeDatos
     class ClasePelicula : Program
     {
 
-        public ClasePelicula(string titulo, int año, string genero, string director, string sinopsis, int rating)
+        public ClasePelicula(string clase, string titulo, int año, string genero, string director, string sinopsis, int rating)
         {
+            this.Clase = clase;
             this.Titulo = titulo;
             this.Año = año;
             this.Genero = genero;

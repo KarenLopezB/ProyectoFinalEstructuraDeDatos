@@ -25,6 +25,11 @@ namespace ProyectoFinalEstructuraDeDatos
             InitializeComponent();
 
             txtbTitulo.IsEnabled= false;
+            txtbAño.IsEnabled = false;
+            txtbDirector.IsEnabled = false;
+            txtbSinopsis.IsEnabled = false;
+            txtbGenero.IsEnabled = false;
+            txtbRating.IsEnabled = false;
         }
     }
 }
