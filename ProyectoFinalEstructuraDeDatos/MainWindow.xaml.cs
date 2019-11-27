@@ -73,12 +73,19 @@ namespace ProyectoFinalEstructuraDeDatos
         private void BtnNuevoElemento_Click(object sender, RoutedEventArgs e)
         {
             grdPrincipal.Children.Clear();
-            grdPrincipal.Children.Add(new Nuevo());
+
+            txtAgregarNuevo.Visibility = Visibility.Visible;
+            txtTipo.Visibility = Visibility.Visible;
+            rdbtnPelicula1.Visibility = Visibility.Visible;
+            rdbtnSerie1.Visibility = Visibility.Visible;
+
             btnOrdenarAZ.Visibility = Visibility.Hidden;
             btnOrdenarZA.Visibility = Visibility.Hidden;
             btnAñoAscendente.Visibility = Visibility.Hidden;
             btnAñoDescendente.Visibility = Visibility.Hidden;
             btnNuevoElemento.Visibility = Visibility.Hidden;
+
+            //grdPrincipal.Children.Add(new Nuevo());
             btnGuardarNuevo.Visibility = Visibility.Visible;
             btnCancelarNuevo.Visibility = Visibility.Visible;
 
@@ -100,6 +107,8 @@ namespace ProyectoFinalEstructuraDeDatos
                 btnActualizarE.Visibility = Visibility.Hidden;
                 btnEliminarE.Visibility = Visibility.Hidden;
                 btnCancelarE.Visibility = Visibility.Hidden;
+                btnGuardarNuevo.Visibility = Visibility.Hidden;
+                btnCancelarNuevo.Visibility = Visibility.Hidden;
 
                 btnHabilitarEdicion.Visibility = Visibility.Visible;
                 btnEliminarPV.Visibility = Visibility.Visible;
@@ -237,6 +246,8 @@ namespace ProyectoFinalEstructuraDeDatos
                 Img3estrellas.Visibility = Visibility.Hidden;
                 Img2estrellas.Visibility = Visibility.Hidden;
                 Img1estrella.Visibility = Visibility.Hidden;
+                btnGuardarNuevo.Visibility = Visibility.Hidden;
+                btnCancelarNuevo.Visibility = Visibility.Hidden;
 
                 ((Editar)(grdPrincipal.Children[0])).txtTituloEP.Text = Programas[listProgram.SelectedIndex].Titulo;
                 ((Editar)(grdPrincipal.Children[0])).txtAñoEP.Text = Programas[listProgram.SelectedIndex].Año.ToString();
@@ -270,6 +281,8 @@ namespace ProyectoFinalEstructuraDeDatos
                 Img3estrellas.Visibility = Visibility.Hidden;
                 Img2estrellas.Visibility = Visibility.Hidden;
                 Img1estrella.Visibility = Visibility.Hidden;
+                btnGuardarNuevo.Visibility = Visibility.Hidden;
+                btnCancelarNuevo.Visibility = Visibility.Hidden;
 
                 ((EditarSerie)(grdPrincipal.Children[0])).txtTituloES.Text = Programas[listProgram.SelectedIndex].Titulo;
                 ((EditarSerie)(grdPrincipal.Children[0])).txtAñoES.Text = Programas[listProgram.SelectedIndex].Año.ToString();
@@ -308,6 +321,8 @@ namespace ProyectoFinalEstructuraDeDatos
                 Img3estrellas.Visibility = Visibility.Hidden;
                 Img2estrellas.Visibility = Visibility.Hidden;
                 Img1estrella.Visibility = Visibility.Hidden;
+                btnGuardarNuevo.Visibility = Visibility.Hidden;
+                btnCancelarNuevo.Visibility = Visibility.Hidden;
 
                 btnNuevoElemento.Visibility = Visibility.Visible;
                 btnOrdenarAZ.Visibility = Visibility.Visible;
@@ -335,6 +350,8 @@ namespace ProyectoFinalEstructuraDeDatos
                 Img3estrellas.Visibility = Visibility.Hidden;
                 Img2estrellas.Visibility = Visibility.Hidden;
                 Img1estrella.Visibility = Visibility.Hidden;
+                btnGuardarNuevo.Visibility = Visibility.Hidden;
+                btnCancelarNuevo.Visibility = Visibility.Hidden;
 
                 btnNuevoElemento.Visibility = Visibility.Visible;
                 btnOrdenarAZ.Visibility = Visibility.Visible;
@@ -352,7 +369,7 @@ namespace ProyectoFinalEstructuraDeDatos
                 grdPrincipal.Children.Add(new Editar());
 
                 //Para minimizar toda la información, hacemos lo siguiente
-
+                 
                 var variable1 =
                     ((Editar)(grdPrincipal.Children[0]));
                 var variable2 =
@@ -389,6 +406,20 @@ namespace ProyectoFinalEstructuraDeDatos
                 btnActualizarE.Visibility = Visibility.Hidden;
                 btnCancelarE.Visibility = Visibility.Hidden;
                 btnEliminarE.Visibility = Visibility.Hidden;
+                btnGuardarNuevo.Visibility = Visibility.Hidden;
+                btnCancelarNuevo.Visibility = Visibility.Hidden;  
+
+                /*
+                if (txtTituloEP.Text == "" || txtCodigoP.Text == "" || txtMarcaP.Text == "" || txtDescuentoP.Text == "" || txtPrecioP.Text == "")
+                {
+                    txtMensaje.Visibility = Visibility.Visible;
+
+                }
+                else
+                {
+                    grdPrincipal.Children.Clear();
+                }
+                */
             };
 
             if (Programas[listProgram.SelectedIndex].Clase == "Serie")
@@ -437,6 +468,8 @@ namespace ProyectoFinalEstructuraDeDatos
                 btnActualizarE.Visibility = Visibility.Hidden;
                 btnCancelarE.Visibility = Visibility.Hidden;
                 btnEliminarE.Visibility = Visibility.Hidden;
+                btnGuardarNuevo.Visibility = Visibility.Hidden;
+                btnCancelarNuevo.Visibility = Visibility.Hidden;
             };
         }
 
@@ -459,6 +492,8 @@ namespace ProyectoFinalEstructuraDeDatos
                 Img3estrellas.Visibility = Visibility.Hidden;
                 Img2estrellas.Visibility = Visibility.Hidden;
                 Img1estrella.Visibility = Visibility.Hidden;
+                btnGuardarNuevo.Visibility = Visibility.Hidden;
+                btnCancelarNuevo.Visibility = Visibility.Hidden;
 
                 btnNuevoElemento.Visibility = Visibility.Visible;
                 btnOrdenarAZ.Visibility = Visibility.Visible;
@@ -486,6 +521,8 @@ namespace ProyectoFinalEstructuraDeDatos
                 Img3estrellas.Visibility = Visibility.Hidden;
                 Img2estrellas.Visibility = Visibility.Hidden;
                 Img1estrella.Visibility = Visibility.Hidden;
+                btnGuardarNuevo.Visibility = Visibility.Hidden;
+                btnCancelarNuevo.Visibility = Visibility.Hidden;
 
                 btnNuevoElemento.Visibility = Visibility.Visible;
                 btnOrdenarAZ.Visibility = Visibility.Visible;

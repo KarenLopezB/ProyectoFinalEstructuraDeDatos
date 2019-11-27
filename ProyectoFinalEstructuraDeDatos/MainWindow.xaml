@@ -35,6 +35,11 @@
         <Button x:Name="btnActualizarE" Visibility="Hidden" Content="Guardar elemento" HorizontalAlignment="Left" Margin="358,447,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnActualizarE_Click"/>
         <Button x:Name="btnCancelarPV" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="657,397,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="BtnCancelarPV_Click"/>
         <Button x:Name="btnEliminarPV" Visibility="Hidden" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnEliminarPV_Click"/>
+        <TextBlock x:Name="txtMensaje" Visibility="Hidden" HorizontalAlignment="Left" Margin="546,77,0,0" TextWrapping="Wrap" Text="*Es necesario llenar llenar todos los datos." VerticalAlignment="Top" FontSize="14" Width="270" Foreground="#FFEE1E1E"/>
+        <Label x:Name="txtAgregarNuevo" Visibility="Hidden" Content="Agregar nuevo elemento" HorizontalAlignment="Left" Margin="282,48,0,0" VerticalAlignment="Top" Height="28" Width="166" FontSize="14"/>
+        <Label x:Name="txtTipo" Visibility="Hidden" Content="Tipo:" HorizontalAlignment="Left" Margin="307,70,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbtnPelicula1" Visibility="Hidden" Content="Película" HorizontalAlignment="Left" Margin="362,89,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbtnSerie1" Visibility="Hidden" Content="Serie" HorizontalAlignment="Left" Margin="496,89,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
