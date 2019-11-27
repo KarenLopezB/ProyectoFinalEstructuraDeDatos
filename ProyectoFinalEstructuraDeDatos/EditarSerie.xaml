@@ -22,13 +22,19 @@
         <TextBox x:Name="txtTemporadasES" HorizontalAlignment="Left" Height="26" Margin="92,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131"/>
         <TextBox x:Name="txtProductorES" HorizontalAlignment="Left" Height="26" Margin="306,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221"/>
         <TextBox x:Name="txtDescripcionES" HorizontalAlignment="Left" Height="103" Margin="92,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="435"/>
-        <TextBox x:Name="txtRatingES" HorizontalAlignment="Left" Height="26" Margin="92,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
         <ComboBox x:Name="cbGeneroES" HorizontalAlignment="Left" Margin="306,114,0,0" VerticalAlignment="Top" Width="221">
             <ComboBoxItem Content="Drama"/>
             <ComboBoxItem Content="Fantasía"/>
             <ComboBoxItem Content="Comedia"/>
             <ComboBoxItem Content="Thriller"/>
             <ComboBoxItem Content="Ciencia Ficción"/>
+        </ComboBox>
+        <ComboBox x:Name="txtRatingES" HorizontalAlignment="Left" Margin="92,294,0,0" VerticalAlignment="Top" Width="156" Height="26">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
         </ComboBox>
     </Grid>
 </UserControl>

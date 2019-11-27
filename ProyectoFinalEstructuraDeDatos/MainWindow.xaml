@@ -15,7 +15,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label Content="Películas y Series" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label Content="Películas y Series" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="222" FontSize="20" FontFamily="Gill Sans MT"/>
         <Button x:Name="btnOrdenarAZ" Content="Ordenar A - Z" HorizontalAlignment="Left" Margin="10,399,0,0" VerticalAlignment="Top" Width="108" Height="27" Click="BtnOrdenarAZ_Click"/>
         <Button x:Name="btnAñoAscendente" Content="∧ Año" HorizontalAlignment="Left" Margin="163,399,0,0" VerticalAlignment="Top" Width="90" Height="27" Click="BtnAñoAscendente_Click"/>
         <Button x:Name="btnAñoDescendente" Content="∨ Año" HorizontalAlignment="Left" Margin="163,447,0,0" VerticalAlignment="Top" Width="90" Height="27" Click="BtnAñoDescendente_Click"/>
@@ -35,11 +35,12 @@
         <Button x:Name="btnActualizarE" Visibility="Hidden" Content="Guardar elemento" HorizontalAlignment="Left" Margin="358,447,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnActualizarE_Click"/>
         <Button x:Name="btnCancelarPV" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="657,397,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="BtnCancelarPV_Click"/>
         <Button x:Name="btnEliminarPV" Visibility="Hidden" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnEliminarPV_Click"/>
-        <TextBlock x:Name="txtMensaje" Visibility="Hidden" HorizontalAlignment="Left" Margin="546,77,0,0" TextWrapping="Wrap" Text="*Es necesario llenar llenar todos los datos." VerticalAlignment="Top" FontSize="14" Width="270" Foreground="#FFEE1E1E"/>
+        <TextBlock x:Name="txtMensaje" Visibility="Hidden" HorizontalAlignment="Left" Margin="547,61,0,0" TextWrapping="Wrap" Text="*Es necesario llenar llenar todos los datos." VerticalAlignment="Top" FontSize="14" Width="270" Foreground="#FFEE1E1E"/>
         <Label x:Name="txtAgregarNuevo" Visibility="Hidden" Content="Agregar nuevo elemento" HorizontalAlignment="Left" Margin="282,48,0,0" VerticalAlignment="Top" Height="28" Width="166" FontSize="14"/>
         <Label x:Name="txtTipo" Visibility="Hidden" Content="Tipo:" HorizontalAlignment="Left" Margin="307,70,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdbtnPelicula1" Visibility="Hidden" Content="Película" HorizontalAlignment="Left" Margin="362,89,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdbtnSerie1" Visibility="Hidden" Content="Serie" HorizontalAlignment="Left" Margin="496,89,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbtnPelicula1" Visibility="Hidden" Content="Película" HorizontalAlignment="Left" Margin="362,89,0,0" VerticalAlignment="Top" Checked="RdbtnPelicula1_Checked"/>
+        <RadioButton x:Name="rdbtnSerie1" Visibility="Hidden" Content="Serie" HorizontalAlignment="Left" Margin="496,89,0,0" VerticalAlignment="Top" Checked="RdbtnSerie1_Checked"/>
+        <Button x:Name="btnGuardarNuevo2" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,368,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevo2_Click"/>
 
     </Grid>
 </Window>

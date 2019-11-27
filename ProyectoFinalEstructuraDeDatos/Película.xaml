@@ -7,24 +7,31 @@
              mc:Ignorable="d" Height="287
              " Width="535">
     <Grid x:Name="grdPelicula" Margin="0,0,0,5">
-        <Label Content="Título:" HorizontalAlignment="Left" Margin="4,1,0,0" VerticalAlignment="Top"/>
-        <Label Content="Año:" HorizontalAlignment="Left" Margin="4,36,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label Content="Director:" HorizontalAlignment="Left" Margin="4,67,0,0" VerticalAlignment="Top" Height="24"/>
-        <Label Content="Sinopsis:" HorizontalAlignment="Left" Margin="4,100,0,0" VerticalAlignment="Top" Height="27"/>
-        <Label Content="Género:" HorizontalAlignment="Left" Margin="250,34,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label Content="Rating:" HorizontalAlignment="Left" Margin="4,175,0,0" VerticalAlignment="Top" Height="26"/>
-        <ComboBox HorizontalAlignment="Left" Margin="315,32,0,0" VerticalAlignment="Top" Width="210" Height="23">
+        <Label Content="Título:" HorizontalAlignment="Left" Margin="5,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Año:" HorizontalAlignment="Left" Margin="5,103,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label Content="Director:" HorizontalAlignment="Left" Margin="5,134,0,0" VerticalAlignment="Top" Height="24"/>
+        <Label Content="Sinopsis:" HorizontalAlignment="Left" Margin="5,167,0,0" VerticalAlignment="Top" Height="27"/>
+        <Label Content="Género:" HorizontalAlignment="Left" Margin="251,101,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label Content="Rating:" HorizontalAlignment="Left" Margin="5,242,0,0" VerticalAlignment="Top" Height="26"/>
+        <ComboBox Name="txtGeneroP1" HorizontalAlignment="Left" Margin="316,103,0,0" VerticalAlignment="Top" Width="210" Height="23">
             <ComboBoxItem Content="Drama"/>
             <ComboBoxItem Content="Fantasía"/>
             <ComboBoxItem Content="Comedia"/>
             <ComboBoxItem Content="Thriller"/>
             <ComboBoxItem Content="Ciencia Ficción"/>
         </ComboBox>
-        <TextBox x:Name="txtTituloP" HorizontalAlignment="Left" Height="23" Margin="73,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
-        <TextBox x:Name="txtAñoP" HorizontalAlignment="Left" Height="23" Margin="73,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="73,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
-        <TextBox HorizontalAlignment="Left" Height="68" Margin="73,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="73,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <TextBox x:Name="txtTituloP1" HorizontalAlignment="Left" Height="23" Margin="74,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <TextBox x:Name="txtAñoP1" HorizontalAlignment="Left" Height="23" Margin="74,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="txtDirectorP1" HorizontalAlignment="Left" Height="23" Margin="74,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <TextBox x:Name="txtSinopsisP1" HorizontalAlignment="Left" Height="68" Margin="74,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <ComboBox x:Name="cbRatingP1" HorizontalAlignment="Left" Margin="74,246,0,0" VerticalAlignment="Top" Width="156" Height="26">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <TextBlock x:Name="txtTipoP1" Visibility="Hidden" HorizontalAlignment="Left" Margin="212,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>

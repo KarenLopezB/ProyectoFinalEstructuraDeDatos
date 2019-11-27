@@ -24,13 +24,19 @@
         <TextBox x:Name="txtAñoEP" HorizontalAlignment="Left" Height="26" Margin="59,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="107"/>
         <TextBox x:Name="txtDirectorEP" HorizontalAlignment="Left" Height="26" Margin="74,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="451"/>
         <TextBox x:Name="txtSinopsisEP" HorizontalAlignment="Left" Height="118" Margin="74,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="451"/>
-        <TextBox x:Name="txtRatingEP" HorizontalAlignment="Left" Height="26" Margin="74,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
         <ComboBox Name="cbGeneroEP" HorizontalAlignment="Left" Margin="249,109,0,0" VerticalAlignment="Top" Width="181" Height="26">
             <ComboBoxItem Content="Drama"/>
             <ComboBoxItem Content="Fantasía"/>
             <ComboBoxItem Content="Comedia"/>
             <ComboBoxItem Content="Thriller"/>
             <ComboBoxItem Content="Ciencia Ficción"/>
+        </ComboBox>
+        <ComboBox x:Name="txtRatingEP" HorizontalAlignment="Left" Margin="74,300,0,0" VerticalAlignment="Top" Width="156" Height="26">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
         </ComboBox>
 
     </Grid>
