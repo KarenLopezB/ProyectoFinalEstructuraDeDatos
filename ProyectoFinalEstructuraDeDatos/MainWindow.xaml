@@ -16,10 +16,10 @@
             </ListView.View>
         </ListView>
         <Label Content="Películas y Series" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="129"/>
-        <Button x:Name="btnOrdenarAZ" Content="Ordenar A - Z" HorizontalAlignment="Left" Margin="10,399,0,0" VerticalAlignment="Top" Width="108" Height="27"/>
-        <Button x:Name="btnAñoAscendente" Content="∧ Año" HorizontalAlignment="Left" Margin="163,399,0,0" VerticalAlignment="Top" Width="90" Height="27"/>
-        <Button x:Name="btnAñoDescendente" Content="∨ Año" HorizontalAlignment="Left" Margin="163,447,0,0" VerticalAlignment="Top" Width="90" Height="27"/>
-        <Button x:Name="btnOrdenarZA" Content="Ordenar Z - A" HorizontalAlignment="Left" Margin="10,447,0,0" VerticalAlignment="Top" Width="108" Height="27"/>
+        <Button x:Name="btnOrdenarAZ" Content="Ordenar A - Z" HorizontalAlignment="Left" Margin="10,399,0,0" VerticalAlignment="Top" Width="108" Height="27" Click="BtnOrdenarAZ_Click"/>
+        <Button x:Name="btnAñoAscendente" Content="∧ Año" HorizontalAlignment="Left" Margin="163,399,0,0" VerticalAlignment="Top" Width="90" Height="27" Click="BtnAñoAscendente_Click"/>
+        <Button x:Name="btnAñoDescendente" Content="∨ Año" HorizontalAlignment="Left" Margin="163,447,0,0" VerticalAlignment="Top" Width="90" Height="27" Click="BtnAñoDescendente_Click"/>
+        <Button x:Name="btnOrdenarZA" Content="Ordenar Z - A" HorizontalAlignment="Left" Margin="10,447,0,0" VerticalAlignment="Top" Width="108" Height="27" Click="BtnOrdenarZA_Click"/>
         <Button x:Name="btnNuevoElemento" Content="Nuevo elemento" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="113" Height="26" Click="BtnNuevoElemento_Click"/>
         <Grid x:Name="grdPrincipal" HorizontalAlignment="Left" Height="326" Margin="281,48,0,0" VerticalAlignment="Top" Width="545"/>
         <Button x:Name="btnGuardarNuevo" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevo_Click"/>
@@ -30,9 +30,9 @@
         <Image x:Name="Img2estrellas" Visibility="Hidden" HorizontalAlignment="Left" Height="40" Margin="349,334,0,0" VerticalAlignment="Top" Width="170" Source="2.png"/>
         <Image x:Name="Img1estrella" Visibility="Hidden" HorizontalAlignment="Left" Height="40" Margin="349,334,0,0" VerticalAlignment="Top" Width="170" Source="1.png"/>
         <Button x:Name="btnHabilitarEdicion" Visibility="Hidden" Content="Habilitar edición" HorizontalAlignment="Left" Margin="299,397,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnHabilitarEdicion_Click"/>
-        <Button x:Name="btnCancelarE" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="760,455,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="BtnCancelarE_Click"/>
-        <Button x:Name="btnEliminarE" Visibility="Hidden" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="580,455,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnEliminarE_Click"/>
-        <Button x:Name="btnActualizarE" Visibility="Hidden" Content="Guardar elemento" HorizontalAlignment="Left" Margin="408,455,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnActualizarE_Click"/>
+        <Button x:Name="btnCancelarE" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="710,447,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="BtnCancelarE_Click"/>
+        <Button x:Name="btnEliminarE" Visibility="Hidden" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="530,447,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnEliminarE_Click"/>
+        <Button x:Name="btnActualizarE" Visibility="Hidden" Content="Guardar elemento" HorizontalAlignment="Left" Margin="358,447,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnActualizarE_Click"/>
         <Button x:Name="btnCancelarPV" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="657,397,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="BtnCancelarPV_Click"/>
         <Button x:Name="btnEliminarPV" Visibility="Hidden" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="132" Height="29" Click="BtnEliminarPV_Click"/>
 

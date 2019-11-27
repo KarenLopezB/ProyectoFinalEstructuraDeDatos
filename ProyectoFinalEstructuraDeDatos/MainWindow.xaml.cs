@@ -219,7 +219,8 @@ namespace ProyectoFinalEstructuraDeDatos
 
         private void BtnHabilitarEdicion_Click(object sender, RoutedEventArgs e)
         {
-            if(Programas[listProgram.SelectedIndex].Clase == "Pelicula")
+
+            if (Programas[listProgram.SelectedIndex].Clase == "Pelicula")
             {
                 grdPrincipal.Children.Clear();
                 grdPrincipal.Children.Add(new Editar());
@@ -244,6 +245,12 @@ namespace ProyectoFinalEstructuraDeDatos
                 ((Editar)(grdPrincipal.Children[0])).txtSinopsisEP.Text = Programas[listProgram.SelectedIndex].Sinopsis;
                 ((Editar)(grdPrincipal.Children[0])).txtRatingEP.Text = Programas[listProgram.SelectedIndex].Rating.ToString();
 
+               /* ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbTitulo.IsEnabled = true;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbAño.IsEnabled = true;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbDirector.IsEnabled = true;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbSinopsis.IsEnabled = true;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbGenero.IsEnabled = true;
+                ((VisualizarPelícula)(grdPrincipal.Children[0])).txtbRating.IsEnabled = true; */
             }
 
             if (Programas[listProgram.SelectedIndex].Clase == "Serie")
@@ -271,40 +278,301 @@ namespace ProyectoFinalEstructuraDeDatos
                 ((EditarSerie)(grdPrincipal.Children[0])).txtProductorES.Text = Programas[listProgram.SelectedIndex].Productor;
                 ((EditarSerie)(grdPrincipal.Children[0])).txtDescripcionES.Text = Programas[listProgram.SelectedIndex].Descripcion;
                 ((EditarSerie)(grdPrincipal.Children[0])).txtRatingES.Text = Programas[listProgram.SelectedIndex].Rating.ToString();
+
+               /* ((VisualizarSerie)(grdPrincipal.Children[0])).txtbTituloS.IsEnabled = true;
+                ((VisualizarSerie)(grdPrincipal.Children[0])).txtbAñoS.IsEnabled = true;
+                ((VisualizarSerie)(grdPrincipal.Children[0])).txtbProductorS.IsEnabled = true;
+                ((VisualizarSerie)(grdPrincipal.Children[0])).txtbDescripcionS.IsEnabled = true;
+                ((VisualizarSerie)(grdPrincipal.Children[0])).txtbTemporadasS.IsEnabled = true;
+                ((VisualizarSerie)(grdPrincipal.Children[0])).txtbGeneroS.IsEnabled = true;
+                ((VisualizarSerie)(grdPrincipal.Children[0])).txtbRatingS.IsEnabled = true; */
             }
         }
 
         private void BtnEliminarPV_Click(object sender, RoutedEventArgs e)
         {
+            if (listProgram.SelectedIndex != -1)
+            {
+                Programas.RemoveAt(listProgram.SelectedIndex);
+                grdPrincipal.Children.Clear();
 
+                btnHabilitarEdicion.Visibility = Visibility.Hidden;
+                btnEliminarPV.Visibility = Visibility.Hidden;
+                btnCancelarPV.Visibility = Visibility.Hidden;
+                btnActualizarE.Visibility = Visibility.Hidden;
+                btnEliminarE.Visibility = Visibility.Hidden;
+                btnCancelarE.Visibility = Visibility.Hidden;
+
+                Img5estrellas.Visibility = Visibility.Hidden;
+                Img4estrellas.Visibility = Visibility.Hidden;
+                Img3estrellas.Visibility = Visibility.Hidden;
+                Img2estrellas.Visibility = Visibility.Hidden;
+                Img1estrella.Visibility = Visibility.Hidden;
+
+                btnNuevoElemento.Visibility = Visibility.Visible;
+                btnOrdenarAZ.Visibility = Visibility.Visible;
+                btnOrdenarZA.Visibility = Visibility.Visible;
+                btnAñoAscendente.Visibility = Visibility.Visible;
+                btnAñoDescendente.Visibility = Visibility.Visible;
+            }
         }
 
         private void BtnCancelarPV_Click(object sender, RoutedEventArgs e)
         {
+            if (listProgram.SelectedIndex != -1)
+            {
+                grdPrincipal.Children.Clear();
 
+                btnHabilitarEdicion.Visibility = Visibility.Hidden;
+                btnEliminarPV.Visibility = Visibility.Hidden;
+                btnCancelarPV.Visibility = Visibility.Hidden;
+                btnActualizarE.Visibility = Visibility.Hidden;
+                btnEliminarE.Visibility = Visibility.Hidden;
+                btnCancelarE.Visibility = Visibility.Hidden;
+
+                Img5estrellas.Visibility = Visibility.Hidden;
+                Img4estrellas.Visibility = Visibility.Hidden;
+                Img3estrellas.Visibility = Visibility.Hidden;
+                Img2estrellas.Visibility = Visibility.Hidden;
+                Img1estrella.Visibility = Visibility.Hidden;
+
+                btnNuevoElemento.Visibility = Visibility.Visible;
+                btnOrdenarAZ.Visibility = Visibility.Visible;
+                btnOrdenarZA.Visibility = Visibility.Visible;
+                btnAñoAscendente.Visibility = Visibility.Visible;
+                btnAñoDescendente.Visibility = Visibility.Visible;
+            }
         }
 
         private void BtnActualizarE_Click(object sender, RoutedEventArgs e)
         {
-           /* if(Programas[listProgram.SelectedIndex].Clase == "Pelicula")
+            if (Programas[listProgram.SelectedIndex].Clase == "Pelicula")
             {
 
                 grdPrincipal.Children.Add(new Editar());
 
-                //Para minimizar toda la informción, hacemos lo siguiente
-                //var variable1 = ((Editar)(grdPrincipal.Children[0]));
-               // var variable2 = Programas;
-            };*///
+                //Para minimizar toda la información, hacemos lo siguiente
+
+                var variable1 =
+                    ((Editar)(grdPrincipal.Children[0]));
+                var variable2 =
+                    Programas[listProgram.SelectedIndex];
+
+                variable2.Titulo = variable1.txtTituloEP.Text;
+                variable2.Genero = variable1.cbGeneroEP.Text;
+                variable2.Director = variable1.txtDirectorEP.Text;
+                variable2.Sinopsis = variable1.txtSinopsisEP.Text;
+
+                var año =
+                    variable2.Año.ToString();
+                var año2 =
+                    Convert.ToInt32(((Editar)(grdPrincipal.Children[0])).txtAñoEP.Text);
+                Programas[listProgram.SelectedIndex].Año = año2;
+                var rating =
+                    variable2.Rating.ToString();
+                var rating2 =
+                    Convert.ToInt32(((Editar)(grdPrincipal.Children[0])).txtRatingEP.Text);
+                Programas[listProgram.SelectedIndex].Rating = rating2;
+
+                listProgram.Items.Refresh();
+                grdPrincipal.Children.Clear();
+
+                btnNuevoElemento.Visibility = Visibility.Visible;
+                btnOrdenarAZ.Visibility = Visibility.Visible;
+                btnOrdenarZA.Visibility = Visibility.Visible;
+                btnAñoAscendente.Visibility = Visibility.Visible;
+                btnAñoDescendente.Visibility = Visibility.Visible;
+
+                btnHabilitarEdicion.Visibility = Visibility.Hidden;
+                btnEliminarPV.Visibility = Visibility.Hidden;
+                btnCancelarPV.Visibility = Visibility.Hidden;
+                btnActualizarE.Visibility = Visibility.Hidden;
+                btnCancelarE.Visibility = Visibility.Hidden;
+                btnEliminarE.Visibility = Visibility.Hidden;
+            };
+
+            if (Programas[listProgram.SelectedIndex].Clase == "Serie")
+            {
+
+                grdPrincipal.Children.Add(new EditarSerie());
+
+                var variable1 =
+                    ((EditarSerie)(grdPrincipal.Children[0]));
+                var variable2 =
+                    Programas[listProgram.SelectedIndex];
+
+                variable2.Titulo = variable1.txtTituloES.Text;
+                variable2.Genero = variable1.cbGeneroES.Text;
+                variable2.Productor = variable1.txtProductorES.Text;
+                variable2.Descripcion = variable1.txtDescripcionES.Text;
+
+                var año =
+                    variable2.Año.ToString();
+                var año2 =
+                    Convert.ToInt32(((EditarSerie)(grdPrincipal.Children[0])).txtAñoES.Text);
+                Programas[listProgram.SelectedIndex].Año = año2;
+                var rating =
+                    variable2.Rating.ToString();
+                var rating2 =
+                    Convert.ToInt32(((EditarSerie)(grdPrincipal.Children[0])).txtRatingES.Text);
+                Programas[listProgram.SelectedIndex].Rating = rating2;
+                var temporadas =
+                    variable2.Temporadas.ToString();
+                var temporadas2 =
+                    Convert.ToInt32(((EditarSerie)(grdPrincipal.Children[0])).txtTemporadasES.Text);
+                Programas[listProgram.SelectedIndex].Rating = temporadas2;
+
+                listProgram.Items.Refresh();
+                grdPrincipal.Children.Clear();
+
+                btnNuevoElemento.Visibility = Visibility.Visible;
+                btnOrdenarAZ.Visibility = Visibility.Visible;
+                btnOrdenarZA.Visibility = Visibility.Visible;
+                btnAñoAscendente.Visibility = Visibility.Visible;
+                btnAñoDescendente.Visibility = Visibility.Visible;
+
+                btnHabilitarEdicion.Visibility = Visibility.Hidden;
+                btnEliminarPV.Visibility = Visibility.Hidden;
+                btnCancelarPV.Visibility = Visibility.Hidden;
+                btnActualizarE.Visibility = Visibility.Hidden;
+                btnCancelarE.Visibility = Visibility.Hidden;
+                btnEliminarE.Visibility = Visibility.Hidden;
+            };
         }
 
         private void BtnEliminarE_Click(object sender, RoutedEventArgs e)
         {
+            if (listProgram.SelectedIndex != -1)
+            {
+                Programas.RemoveAt(listProgram.SelectedIndex);
+                grdPrincipal.Children.Clear();
 
+                btnHabilitarEdicion.Visibility = Visibility.Hidden;
+                btnEliminarPV.Visibility = Visibility.Hidden;
+                btnCancelarPV.Visibility = Visibility.Hidden;
+                btnActualizarE.Visibility = Visibility.Hidden;
+                btnEliminarE.Visibility = Visibility.Hidden;
+                btnCancelarE.Visibility = Visibility.Hidden;
+
+                Img5estrellas.Visibility = Visibility.Hidden;
+                Img4estrellas.Visibility = Visibility.Hidden;
+                Img3estrellas.Visibility = Visibility.Hidden;
+                Img2estrellas.Visibility = Visibility.Hidden;
+                Img1estrella.Visibility = Visibility.Hidden;
+
+                btnNuevoElemento.Visibility = Visibility.Visible;
+                btnOrdenarAZ.Visibility = Visibility.Visible;
+                btnOrdenarZA.Visibility = Visibility.Visible;
+                btnAñoAscendente.Visibility = Visibility.Visible;
+                btnAñoDescendente.Visibility = Visibility.Visible;
+            }
         }
 
         private void BtnCancelarE_Click(object sender, RoutedEventArgs e)
         {
+            if (listProgram.SelectedIndex != -1)
+            {
+                grdPrincipal.Children.Clear();
 
+                btnHabilitarEdicion.Visibility = Visibility.Hidden;
+                btnEliminarPV.Visibility = Visibility.Hidden;
+                btnCancelarPV.Visibility = Visibility.Hidden;
+                btnActualizarE.Visibility = Visibility.Hidden;
+                btnEliminarE.Visibility = Visibility.Hidden;
+                btnCancelarE.Visibility = Visibility.Hidden;
+
+                Img5estrellas.Visibility = Visibility.Hidden;
+                Img4estrellas.Visibility = Visibility.Hidden;
+                Img3estrellas.Visibility = Visibility.Hidden;
+                Img2estrellas.Visibility = Visibility.Hidden;
+                Img1estrella.Visibility = Visibility.Hidden;
+
+                btnNuevoElemento.Visibility = Visibility.Visible;
+                btnOrdenarAZ.Visibility = Visibility.Visible;
+                btnOrdenarZA.Visibility = Visibility.Visible;
+                btnAñoAscendente.Visibility = Visibility.Visible;
+                btnAñoDescendente.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void BtnOrdenarAZ_Click(object sender, RoutedEventArgs e)
+        {
+            bool ordenarAZ;
+            do
+            {
+                ordenarAZ = false;
+                for (int AZ = 0; AZ < (Programas.Count - 1); AZ++)
+                {
+                    if (string.Compare(Programas[AZ].Titulo, Programas[AZ + 1].Titulo) > 0)
+                    {
+                        var temp = Programas[AZ];
+                        Programas[AZ] = Programas[AZ + 1];
+                        Programas[AZ + 1] = temp;
+                        ordenarAZ = true;
+                    }
+                }
+            } while (ordenarAZ == true);
+        }
+    
+
+        private void BtnOrdenarZA_Click(object sender, RoutedEventArgs e)
+        {
+            bool ordenarZA;
+            do
+            {
+                ordenarZA = false;
+                for (int ZA = 0; ZA < (Programas.Count - 1); ZA++)
+                {
+                    if (string.Compare(Programas[ZA].Titulo, Programas[ZA + 1].Titulo) < 0)
+                    {
+                        var temp = Programas[ZA];
+                        Programas[ZA] = Programas[ZA + 1];
+                        Programas[ZA + 1] = temp;
+                        ordenarZA= true;
+                    }
+                }
+            } while (ordenarZA == true);
+        }
+
+        private void BtnAñoAscendente_Click(object sender, RoutedEventArgs e)
+        {
+            int añoAscendente, i;
+            añoAscendente = Programas.Count / 2;
+
+            while (añoAscendente > 0)
+            {
+                for (i = 0; i < Programas.Count; i++)
+                {
+                    if (añoAscendente + i < Programas.Count && Programas[i].Año > Programas[añoAscendente + i].Año)
+                    {
+                        var temp = Programas[i];
+                        Programas[i] = Programas[añoAscendente + i];
+                        Programas[añoAscendente + i] = temp;
+                    }
+                }
+                añoAscendente--;
+            }
+        }
+
+        private void BtnAñoDescendente_Click(object sender, RoutedEventArgs e)
+        {
+            int añoDescendente, i;
+            añoDescendente = Programas.Count / 2;
+
+            while (añoDescendente > 0)
+            {
+                for (i = 0; i < Programas.Count; i++)
+                {
+                    if (añoDescendente + i < Programas.Count && Programas[i].Año < Programas[añoDescendente + i].Año)
+                    {
+
+                        var temp = Programas[i];
+                        Programas[i] = Programas[añoDescendente + i];
+                        Programas[añoDescendente + i] = temp;
+                    }
+                }
+                añoDescendente--;
+            }
         }
     }
 }

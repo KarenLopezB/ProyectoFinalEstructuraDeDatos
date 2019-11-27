@@ -23,6 +23,14 @@ namespace ProyectoFinalEstructuraDeDatos
         public VisualizarSerie()
         {
             InitializeComponent();
+
+            txtbTituloS.IsEnabled = false;
+            txtbAñoS.IsEnabled = false;
+            txtbProductorS.IsEnabled = false;
+            txtbTemporadasS.IsEnabled = false;
+            txtbDescripcionS.IsEnabled = false;
+            txtbGeneroS.IsEnabled = false;
+            txtbRatingS.IsEnabled = false;
         }
     }
 }

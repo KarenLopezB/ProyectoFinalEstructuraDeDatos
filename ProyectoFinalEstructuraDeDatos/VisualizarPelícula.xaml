@@ -19,8 +19,8 @@
         <Label Content="Película" HorizontalAlignment="Left" Margin="83,22,0,0" VerticalAlignment="Top" Height="30" Width="239" FontSize="16"/>
         <TextBlock x:Name="txtbTitulo" HorizontalAlignment="Left" Margin="59,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="466"/>
         <TextBlock x:Name="txtbAño" HorizontalAlignment="Left" Margin="59,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="107"/>
-        <TextBlock x:Name="txtbGenero" HorizontalAlignment="Left" Margin="74,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="451"/>
-        <TextBlock x:Name="txtbDirector" HorizontalAlignment="Left" Margin="234,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="291"/>
+        <TextBlock x:Name="txtbDirector" HorizontalAlignment="Left" Margin="74,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="451"/>
+        <TextBlock x:Name="txtbGenero" HorizontalAlignment="Left" Margin="234,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="291"/>
         <TextBlock x:Name="txtbSinopsis" HorizontalAlignment="Left" Margin="74,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="118" Width="451"/>
         <TextBlock x:Name="txtbRating" Visibility="Hidden" HorizontalAlignment="Left" Margin="74,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="214"/>
     </Grid>
