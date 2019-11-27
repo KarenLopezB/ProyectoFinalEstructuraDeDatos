@@ -22,7 +22,6 @@
         <Button x:Name="btnOrdenarZA" Content="Ordenar Z - A" HorizontalAlignment="Left" Margin="10,447,0,0" VerticalAlignment="Top" Width="108" Height="27" Click="BtnOrdenarZA_Click"/>
         <Button x:Name="btnNuevoElemento" Content="Nuevo elemento" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="113" Height="26" Click="BtnNuevoElemento_Click"/>
         <Grid x:Name="grdPrincipal" HorizontalAlignment="Left" Height="326" Margin="281,48,0,0" VerticalAlignment="Top" Width="545"/>
-        <Button x:Name="btnGuardarNuevo" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevo_Click"/>
         <Button x:Name="btnCancelarNuevo" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="670,397,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="BtnCancelarNuevo_Click"/>
         <Image x:Name="Img5estrellas" Visibility="Hidden" HorizontalAlignment="Left" Height="40" Margin="349,334,0,0" VerticalAlignment="Top" Width="170" Source="5.png"/>
         <Image x:Name="Img4estrellas" Visibility="Hidden" HorizontalAlignment="Left" Height="40" Margin="349,334,0,0" VerticalAlignment="Top" Width="170" Source="4.png"/>
@@ -40,7 +39,8 @@
         <Label x:Name="txtTipo" Visibility="Hidden" Content="Tipo:" HorizontalAlignment="Left" Margin="307,70,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="rdbtnPelicula1" Visibility="Hidden" Content="Película" HorizontalAlignment="Left" Margin="362,89,0,0" VerticalAlignment="Top" Checked="RdbtnPelicula1_Checked"/>
         <RadioButton x:Name="rdbtnSerie1" Visibility="Hidden" Content="Serie" HorizontalAlignment="Left" Margin="496,89,0,0" VerticalAlignment="Top" Checked="RdbtnSerie1_Checked"/>
-        <Button x:Name="btnGuardarNuevo2" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,368,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevo2_Click"/>
+        <Button x:Name="btnGuardarNuevo2" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevo2_Click"/>
+        <Button x:Name="btnGuardarNuevojeje" Visibility="Visible" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,407,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevojeje_Click"/>
 
     </Grid>
 </Window>
