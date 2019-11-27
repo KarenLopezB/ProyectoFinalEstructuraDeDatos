@@ -40,7 +40,7 @@
         <RadioButton x:Name="rdbtnPelicula1" Visibility="Hidden" Content="Película" HorizontalAlignment="Left" Margin="362,89,0,0" VerticalAlignment="Top" Checked="RdbtnPelicula1_Checked"/>
         <RadioButton x:Name="rdbtnSerie1" Visibility="Hidden" Content="Serie" HorizontalAlignment="Left" Margin="496,89,0,0" VerticalAlignment="Top" Checked="RdbtnSerie1_Checked"/>
         <Button x:Name="btnGuardarNuevo2" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevo2_Click"/>
-        <Button x:Name="btnGuardarNuevojeje" Visibility="Visible" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,407,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevojeje_Click"/>
+        <Button x:Name="btnGuardarNuevojeje" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="477,397,0,0" VerticalAlignment="Top" Width="158" Height="29" Click="BtnGuardarNuevojeje_Click"/>
 
     </Grid>
 </Window>
